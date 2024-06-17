@@ -29,6 +29,7 @@
   },
   "scripts": {
     "audit-moderate": "npm install && npm audit --json --audit-level=moderate > audit.json",
+    "cargo": "wasm-pack build --all-targets && wasm-pack test --node -- --all-targets",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "tsc": "tsc",
     "wasm": "wasm-pack build --all-targets && wasm-pack test --node -- --all-targets"
