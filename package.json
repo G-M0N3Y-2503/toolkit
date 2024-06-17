@@ -13,7 +13,8 @@
     "lint": "eslint packages/**/*.ts",
     "lint-fix": "eslint packages/**/*.ts --fix",
     "new-package": "scripts/create-package",
-    "test": "jest --testTimeout 70000"
+    "test": "jest --testTimeout 70000",
+    "wasm": "wasm-pack build --all-targets && wasm-pack test --node -- --all-targets && lerna run wasm"
   },
   "devDependencies": {
     "@types/jest": "^29.5.4",

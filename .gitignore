@@ -1,7 +1,11 @@
 node_modules/
 packages/*/node_modules/
 packages/*/lib/
+packages/*/pkg/
+packages/*/target/
 packages/*/__tests__/_temp/
+/pkg/
+/target/
 .DS_Store
 *.xar
 packages/*/audit.json

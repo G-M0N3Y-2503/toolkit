@@ -1,0 +1,14 @@
+[package]
+name = "actions_core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/core.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.2"
