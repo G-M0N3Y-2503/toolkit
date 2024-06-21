@@ -17,6 +17,8 @@
     "wasm": "wasm-pack build --all-targets && wasm-pack test --node -- --all-targets && lerna run wasm"
   },
   "devDependencies": {
+    "@actions/core": "file:packages/core",
+    "@actions/exec": "file:packages/exec",
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.7",
     "@types/signale": "^1.4.1",
